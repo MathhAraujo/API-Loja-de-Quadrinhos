@@ -12,6 +12,8 @@ import java.util.Arrays;
 @Configuration
 public class SpringDocConfig {
 
+    //Adiciona botão "Authorize" no swagger.ui
+
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()

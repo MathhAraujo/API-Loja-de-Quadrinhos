@@ -32,7 +32,7 @@ public class AuthenticationController {
         this.tokenService = tokenService;
     }
 
-    @Operation(description = "admin 1234 \n" + "user 1234")
+    @Operation(description = "Realiza o login do user e retorna o token a ser utilizado")
     @PostMapping(path = "/login")
     public ResponseEntity login(@RequestBody @Valid AuthenticationDTO data) {
 

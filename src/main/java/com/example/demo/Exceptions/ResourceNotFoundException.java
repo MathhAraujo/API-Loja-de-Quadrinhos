@@ -9,8 +9,6 @@ import java.time.format.DateTimeFormatter;
 @Getter
 public class ResourceNotFoundException extends RuntimeException {
 
-    //Exceção não utilizada, estava retornando o stacktrace por algum motivo e não consegui remove-lo
-
     private LocalDateTime errorTime;
     private DateTimeFormatter format = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
     private HttpStatus status = HttpStatus.NOT_FOUND;
@@ -33,16 +31,16 @@ public class ResourceNotFoundException extends RuntimeException {
     public String toString() {
         if (id != null) {
             return "ResourceNotFoundException{" +
-                    "\n errorTime=" + errorTime.format(format) +
-                    ",\n message='" + message + '\'' +
-                    ",\n httpCode=" + status +
-                    ",\n id=" + id + "\n" +
+                    "\n errorTime= " + errorTime.format(format) +
+                    ",\n message= '" + message + '\'' +
+                    ",\n httpCode= " + status +
+                    ",\n id= " + id + "\n" +
                     '}';
         } else {
             return "ResourceNotFoundException{" +
-                    "\n errorTime=" + errorTime.format(format) +
-                    ",\n message='" + message + '\'' +
-                    ",\n httpCode=" + status +
+                    "\n errorTime= " + errorTime.format(format) +
+                    ",\n message= '" + message + '\'' +
+                    ",\n httpCode= " + status +
                     '}';
         }
     }

@@ -33,10 +33,10 @@ public class InvalidArgumentException extends RuntimeException {
     @Override
     public String toString() {
         return "InvalidArgumentException{" +
-                "\n errorTime=" + errorTime.format(format) +
-                ",\n message='" + message + '\'' +
-                ",\n httpCode=" + status +
-                ",\n rejectedValue=" + rejectedValue + "\n" +
+                "\n errorTime= " + errorTime.format(format) +
+                ",\n message= '" + message + '\'' +
+                ",\n httpCode= " + status +
+                ",\n rejectedValue= " + rejectedValue + "\n" +
                 '}';
     }
 }
