@@ -37,7 +37,7 @@ O padrão DTO foi utilizado para transporte e o tratamento de exceptions se da p
 Seguido também o padrão Service-Repository, deixando toda a business logic na camada de serviço e não dando acesso direto dos controlles aos repositórios.
 
 ```
-📦desafioMoura 
+📦 
 ├─ .idea
 │  ├─ .gitignore
 │  ├─ compiler.xml
