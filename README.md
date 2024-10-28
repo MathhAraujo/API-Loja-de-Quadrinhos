@@ -1,4 +1,4 @@
-# Desafio Técnico Back-end
+# API-Loja-de-Quadrinhos
 
 Criação de uma API Rest de uma loja de quadrinhos semelhante a API da Marvel
 API: https://developer.marvel.com
