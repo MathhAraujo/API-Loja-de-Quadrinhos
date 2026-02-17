@@ -99,7 +99,7 @@ This multi-layered approach ensures reliability across API behavior, business lo
 Edit `application.properties`:
 
 ```
-spring.datasource.url=jdbc:mysql://localhost:8080/{database}
+spring.datasource.url=jdbc:mysql://localhost:3306/{database}
 spring.datasource.username={username}
 spring.datasource.password={password}
 ```
@@ -145,18 +145,18 @@ Create comics using:
 
 ```
 {
-"raridade": "[COMUM, RARO]",
-"volume": 0,
-"titulo": "string",
-"editora": "string"
+  "raridade": "[COMUM, RARO]",
+  "volume": 0,
+  "titulo": "string",
+  "editora": "string"
 }
 ```
 
 ### Orders:
 ```
 {
-"quantidade": 0,
-"quadrinhoId": 0
+  "quantidade": 0,
+  "quadrinhoId": 0
 }
 ```
 
@@ -171,8 +171,8 @@ Custom coupon JSON:
 
 ```
 {
-"raridade": "[COMUM, RARO]",
-"validade": "year-month-day"
+  "raridade": "[COMUM, RARO]",
+  "validade": "year-month-day"
 }
 ```
 
@@ -190,10 +190,10 @@ The API returns structured error responses for invalid operations.
 ```
 InvalidArgumentException
 {
-errorTime: dd-MM-yyyy HH:mm:ss
-message: "Invalid parameter"
-httpCode: 400
-rejectedValue: value
+  errorTime: dd-MM-yyyy HH:mm:ss
+  message: "Invalid parameter"
+  httpCode: 400
+  rejectedValue: value
 }
 ```
 
@@ -202,9 +202,9 @@ rejectedValue: value
 ```
 ResourceNotFoundException
 {
-errorTime: dd-MM-yyyy HH:mm:ss
-message: "Resource not found"
-httpCode: 404
-id: id
+  errorTime: dd-MM-yyyy HH:mm:ss
+  message: "Resource not found"
+  httpCode: 404
+  id: id
 }
 ```
